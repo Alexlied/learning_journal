@@ -102,3 +102,5 @@ $RECYCLE.BIN/
 
 # SQL
 *.sqlite
+
+*.pyc
