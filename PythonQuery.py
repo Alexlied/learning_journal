@@ -6,5 +6,7 @@ engine = engine_from_config(settings, 'sqlalchemy.')
 from sqlalchemy.orm import sessionmaker
 Session = sessionmaker(bind=engine)
 session = Session()
-from learning_journal.models import MyModel
-session.query(MyModel).all()
+from learning_journal.models import Entry
+session.query(Entry).all()
+query = session.query(Entry)
+type(Entry)
